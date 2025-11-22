@@ -1,0 +1,38 @@
+/* Votre code CSS pour la page Portfolio */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header gris clair et titre centré */
+header {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Liens de navigation sur une seule ligne avec espacement */
+#menu-principal a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Petit effet au survol */
+#menu-principal a:hover {
+  text-decoration: underline;
+}
+
+/* Blocs projets : bordure, marge, padding */
+.projet {
+  border: 1px solid #ccc;
+  margin: 10px 15px;
+  padding: 10px;
+}
+
+/* Footer centré, police plus petite */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 10px 0;
+}
