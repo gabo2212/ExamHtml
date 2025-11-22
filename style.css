@@ -3,36 +3,78 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(145deg, #0b1727, #122b3c 50%, #1f536b);
+  color: #f5f9fc;
 }
 
-/* Header gris clair et titre centré */
+main, header, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header lumineux avec léger dégradé */
 header {
-  background-color: #f0f0f0;
+  background: linear-gradient(90deg, #1f4fd2, #1cb5e0);
   text-align: center;
-  padding: 15px 0;
+  padding: 25px 0 30px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
-/* Liens de navigation sur une seule ligne avec espacement */
+header h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Liens de navigation colorés */
 #menu-principal a {
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 14px;
+  font-weight: bold;
+  color: #fefefe;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Petit effet au survol */
 #menu-principal a:hover {
-  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #052642;
 }
 
-/* Blocs projets : bordure, marge, padding */
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  color: #4ecdc4;
+  margin-bottom: 15px;
+}
+
+/* Blocs projets : fond coloré, ombres douces */
 .projet {
-  border: 1px solid #ccc;
-  margin: 10px 15px;
-  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-radius: 16px;
+  background: linear-gradient(120deg, rgba(78, 205, 196, 0.15), rgba(58, 123, 213, 0.15));
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.projet h3 {
+  margin-top: 0;
+  color: #f9ca24;
 }
 
 /* Footer centré, police plus petite */
 footer {
   text-align: center;
-  font-size: 0.9rem;
-  padding: 10px 0;
+  font-size: 0.95rem;
+  padding: 25px 0 35px;
+  margin-top: 40px;
+  color: #d4e6fc;
 }
